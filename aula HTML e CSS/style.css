@@ -1,0 +1,62 @@
+body {
+    color: rgb(27, 31, 53);
+    background: rgb(255, 255, 255); 
+    margin: 0px;
+    font-family: "Saira Condensed", sans-serif;
+    margin-bottom: 10px;
+    }
+     header{
+        border-bottom: solid 2px rgb(0, 0, 0);
+        padding: 20px;
+        font-size: 35px;
+
+     }
+
+    h1{ 
+     
+        font-size: 55px;
+        color: rgb(255, 11, 133)
+    }
+    h5{
+        font-size: 55px;
+        color: rgb(133, 19, 76)
+    }
+    h3{
+        font-size: 55px;
+        color: rgb(78, 3, 253)
+    }
+    h6{
+        font-size: 55px;
+        color: rgb(0, 255, 0) 
+    }
+
+.seta {
+    padding-left: 140px;
+    width: 100px;
+    height: 200px;
+}
+.setas{
+    padding-left: 140px;
+    width: 100px;
+    height: 200px;
+}
+    .tigre{
+        width: 400px;
+        height: 150px;
+    }
+
+    .brigas{
+        padding-left: 20px;
+    padding-right: 20px ;
+ margin-top: 50px;
+    }
+    .bixos img {
+        opacity: 0.1; 
+        height: 250px;
+       
+    }
+    .bixos img:hover {
+        opacity: 1.0;
+        border: 2px solid darkgreen;
+       
+    }
