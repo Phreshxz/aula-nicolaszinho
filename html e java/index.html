@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercícios Interativos</title>
+</head>
+<body>
+
+  <!-- 1. mudar texto -->
+  <section>
+    <h2>1. Mudar texto para "Olá, Mundo!"</h2>
+    <p id="meuTexto">Texto original</p>
+    <button onclick="mudarTexto()">Mudar Texto</button>
+  </section>
+
+  <!-- 2. mudar cor da pagina -->
+  <section>
+    <h2>2. Mudar cor de fundo da página para azul</h2>
+    <button onclick="mudarCorFundo()">Mudar Fundo para Azul</button>
+  </section>
+
+  <!-- 3. contador -->
+  <section>
+    <h2>3. Contador com + e -</h2>
+    <span id="contador">0</span><br>
+    <button onclick="mudarContador(1)">+</button>
+    <button onclick="mudarContador(-1)">-</button>
+  </section>
+
+  <!-- 4. adicionar item a lista -->
+  <section>
+    <h2>4. Adicionar item a uma lista</h2>
+    <input id="itemTexto" type="text" placeholder="Digite algo">
+    <button onclick="adicionarItem()">Adicionar</button>
+    <ul id="lista"></ul>
+  </section>
+
+  <!-- 5. mostrar imagem -->
+  <section>
+    <h2>5. Mostrar/Esconder imagem</h2>
+    <img
+      id="imagemToggle"
+      class="tigre"
+      src="https://i0.wp.com/blog.bioparquedorio.com.br/wp-content/uploads/2020/07/Curiosidades_Macaco_Prego_Peito_Amarelo.jpg?w=1280&ssl=1"
+      alt="Macaco prego"
+      style="display: block; width: 300px;"
+    >
+    <br>
+    <button onclick="toggleImagem()">Mostrar/Esconder</button>
+  </section>
+
+  <!-- 6. Trocar imagem -->
+  <section>
+    <h2>6. Alternar imagem</h2>
+    <img id="imagemAlternar" src="https://static.todamateria.com.br/upload/57/bf/57bf869193e1b-tamandua-bandeira.jpg" alt="Tamanduá-bandeira" width="300">
+    <br>
+    <button onclick="alternarImagem()">Alternar Imagem</button>
+  </section>
+
+  <!-- 7. Lista de tarefas -->
+  <section>
+    <h2>7. Lista de Tarefas (To-do List)</h2>
+    <input id="tarefaTexto" type="text" placeholder="Nova tarefa">
+    <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
+    <ul id="listaTarefas"></ul>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>
