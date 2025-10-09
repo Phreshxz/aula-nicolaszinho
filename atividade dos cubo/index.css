@@ -1,0 +1,86 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    height: 100vh;
+}
+
+.square_blu {
+    background-color: rgb(182, 2, 2);
+    height: 150px;
+    width: 150px;
+}
+
+
+.linha1 {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.linha2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linha3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.linha {
+    height: 33.3333%;
+}
+
+.square_ore {
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    width: 50px;
+}
+
+.meta {
+    height: 50%;
+}
+
+.flex {
+    display: flex;
+
+}
+
+
+.meio {
+    justify-content: center;
+}
+
+.meia {
+    align-items: center;
+
+}
+
+.baixo {
+    justify-content: end;
+
+}
+
+.baixa {
+    align-items: end;
+
+}
+
+.come {
+    align-items: start;
+
+}
+
+.coma {
+    justify-content: flex-start;
+}
+
+.cantim{
+justify-content: end;
+align-items: flex-end;
+}
