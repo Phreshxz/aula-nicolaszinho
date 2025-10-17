@@ -3,84 +3,99 @@
     padding: 0px;
 }
 
-.container {
+.container{
     height: 100vh;
 }
 
-.square_blu {
+.square_blu{
     background-color: rgb(182, 2, 2);
     height: 150px;
     width: 150px;
 }
 
 
-.linha1 {
+.linha1{
     display: flex;
 
     justify-content: space-between;
 }
 
-.linha2 {
+.linha2{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.linha3 {
+.linha3{
     display: flex;
     justify-content: space-between;
     align-items: end;
 }
 
-.linha {
+.linha{
     height: 33.3333%;
 }
 
-.square_ore {
+.square_ore{
     background-color: rgb(0, 0, 0);
     height: 50px;
     width: 50px;
 }
 
-.meta {
-    height: 50%;
+.meta{
+height: 50%;
 }
 
-.flex {
-    display: flex;
-
-}
-
-
-.meio {
-    justify-content: center;
-}
-
-.meia {
-    align-items: center;
+.flex{
+display: flex;
 
 }
 
-.baixo {
-    justify-content: end;
+
+.meio{
+ justify-content: center;
+}
+
+.meia{
+ align-items: center;
 
 }
 
-.baixa {
-    align-items: end;
+.baixo{
+ justify-content: end;
 
 }
 
-.come {
-    align-items: start;
+.baixa{
+ align-items: end;
 
 }
 
-.coma {
-    justify-content: flex-start;
+.come{
+ align-items: start;
+
+}
+
+.coma{
+justify-content: flex-start;
 }
 
 .cantim{
 justify-content: end;
 align-items: flex-end;
+}
+
+.baixito {
+align-items: flex-end;
+
+}
+
+.space{
+justify-content:space-between ;
+
+}
+
+
+.terco{
+    height: 33.3333%;
 }
