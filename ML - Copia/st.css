@@ -1,3 +1,4 @@
+/* Estilos Globais e Reset */
 * {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
@@ -5,27 +6,29 @@
 
 body {
   margin: 0;
-  background-color: #F5F5F5;
-  color: #111827;
+  background-color: #F5F5F5; /* Cor de fundo */
+  color: #333333; /* Cor de texto principal */
 }
 
+/* Cabeçalho */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #26A69A;
-  color: #333333;
+  background: #26A69A; /* Cor secundária */
+  color: #333333; /* Cor de texto principal */
   padding: 20px;
 }
 
 .header-title h1 {
   margin: 0;
   font-size: 24px;
+  color: #2C73D2; /* Cor primária para o título */
 }
 
 .header-buttons button {
-  background: #2C73D2;
-  color: #666666;
+  background: #2C73D2; /* Cor primária */
+  color: white; /* Texto branco para contraste */
   border: none;
   padding: 8px 12px;
   border-radius: 6px;
@@ -36,9 +39,10 @@ body {
 }
 
 .header-buttons button:hover {
-  background: #e0e7ff;
+  background: #1e5fb3; /* Tom mais escuro da cor primária para hover */
 }
 
+/* Conteúdo Principal */
 .main {
   padding: 20px;
   max-width: 960px;
@@ -54,45 +58,19 @@ body {
 
 .tab {
   padding: 10px 20px;
-  background: #e5e7eb;
+  background: #e5e7eb; /* Cor neutra para aba inativa */
   border-radius: 8px;
   cursor: pointer;
   font-weight: 500;
+  color: #333333; /* Cor de texto principal */
 }
 
 .tab.active {
-  background: #3b5bff;
+  background: #2C73D2; /* Cor primária para a aba ativa */
   color: white;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f9f9f9;
-}
-
-.header {
-  background: teal;
-  color: white;
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-title h1 {
-  margin: 0;
-}
-
-.header-buttons button {
-  background: #3498db;
-  border: none;
-  padding: 8px 15px;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
+/* Seção de Livros */
 .livros-cadastrados {
   padding: 20px;
 }
@@ -109,7 +87,7 @@ body {
 
 .livro-card {
   background: white;
-  border-left: 5px solid #3498db;
+  border-left: 5px solid #26A69A; /* Cor secundária para destaque */
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -117,20 +95,24 @@ body {
 
 .livro-card h3 {
   margin: 0 0 10px;
-  color: #2c3e50;
+  color: #2C73D2; /* Cor primária para o título do livro */
 }
 
 .livro-card p {
   margin: 5px 0;
-  color: #555;
+  color: #666666; /* Cor de texto secundário */
 }
 
 .livro-card span {
   font-weight: bold;
+  color: #2C73D2; /* Cor primária para ênfase */
 }
-.h1{
-  color: #2C73D2;
+
+/* Classes utilitárias (mantidas do original) */
+.h1 {
+  color: #2C73D2; /* Cor primária */
 }
-.p{
-  color: #2C73D2;
+
+.p {
+  color: #2C73D2; /* Cor primária */
 }

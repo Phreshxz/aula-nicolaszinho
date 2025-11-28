@@ -10,20 +10,24 @@
 
 <body>
   <div class="container">
-
     <!-- LOGIN -->
     <div id="register-container" class="form-box">
       <div class="icon">📖</div>
       <h2>Cadastre seu livro</h2>
-      <p>prencha abaixo com a informações</p>
+      <p>Preencha abaixo com as informações</p>
 
       <form id="registerForm" action="cadastro.php" method="POST">
-        <label>Titulo</label>
-        <input type="text" name="titulo" placeholder="titulo" required>
+
+        <label>Título</label>
+        <input type="text" name="titulo" placeholder="Título" required maxlength="100">
+
         <label>Autor</label>
-        <input type="text" name="autor" placeholder="autor" required>
+        <input type="text" name="autor" placeholder="Autor" required maxlength="60">
+
         <label>Ano de publicação</label>
-        <input type="text" name="ano" placeholder="ano" required>
+        <input type="text" name="ano" placeholder="Ano" required maxlength="4" pattern="\d{4}"
+          title="Digite um ano com 4 dígitos (ex: 2020)">
+
         <label>Categoria</label>
         <select name="cate" required>
           <option value="">Selecione uma categoria</option>
@@ -36,15 +40,15 @@
           <option value="Infantil">Infantil</option>
         </select>
 
-        <label>Quantidade disponivel</label>
-        <input type="text" name="quant" placeholder="quantidade" required>
+        <label>Quantidade disponível</label>
+        <input type="number" name="quant" placeholder="Quantidade" required min="1" max="999">
+
         <button type="submit">Entrar →</button>
       </form>
-
     </div>
 
+  
   </div>
-
   <script src="script.js"></script>
 </body>
 

@@ -1,16 +1,21 @@
+/* Estilos Globais e Reset */
 body {
     font-family: Arial, sans-serif;
     background-color: #F5F5F5;
+    /* Cor de fundo */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    color: #333333;
+    /* Cor de texto principal */
 }
 
 .container {
     width: 380px;
-    background:#26A69A;
+    background: #26A69A;
+    /* Cor secundária para o container */
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -19,11 +24,13 @@ body {
 
 h2 {
     margin-bottom: 5px;
-    color: #111;
+    color: #2C73D2;
+    /* Cor primária para títulos */
 }
 
 p {
-    color: #333;
+    color: #333333;
+    /* Cor de texto principal */
     font-size: 14px;
 }
 
@@ -37,30 +44,38 @@ form {
 label {
     margin-top: 10px;
     font-size: 14px;
+    color: #333333;
+    /* Cor de texto principal para labels */
 }
 
-input {
+input,
+select {
     width: 100%;
     padding: 8px;
     margin-top: 4px;
     border: 1px solid #ccc;
+    /* Cor de borda neutra */
     border-radius: 6px;
+    background-color: #fff;
+    font-size: 14px;
 }
 
 button {
     margin-top: 20px;
     width: 100%;
     background: #2C73D2;
+    /* Cor primária */
     color: white;
     border: none;
     padding: 10px;
     border-radius: 6px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: background 0.3s;
 }
 
 button:hover {
-    background: #2C73D2;
+    background: #1e5fb3;
+    /* Tom mais escuro da cor primária para hover */
 }
 
 .link {
@@ -68,7 +83,8 @@ button:hover {
 }
 
 a {
-    color: #4b5eff;
+    color: #2C73D2;
+    /* Cor primária para links */
     text-decoration: none;
 }
 
@@ -76,12 +92,21 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Classe para mensagens de erro (ex: "Senha incorreta") */
+.error-message {
+    color: #E57373;
+    /* Cor de erro/alerta */
+    font-size: 14px;
+    margin-top: 5px;
+}
+
 .hidden {
     display: none;
 }
 
 .icon {
-    background-color: #3b82f6;
+    background-color: #2C73D2;
+    /* Cor primária para o ícone */
     color: #fff;
     width: 60px;
     height: 60px;
@@ -92,11 +117,4 @@ a:hover {
     font-size: 28px;
     margin: 0 auto 1rem;
 }
-select {
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    font-size: 14px;
-  }
-  
+

@@ -47,22 +47,24 @@ include("conexao.php");
         $categoriaSelecionada = isset($_GET['categoria']) ? $_GET['categoria'] : '';
 
         if ($categoriaSelecionada && $categoriaSelecionada !== "Todas") {
-            $sql = "SELECT titulo, autor, categoria FROM livros WHERE categoria = ? ORDER BY titulo ASC";
+            $sql = "SELECT titulo, autor, ano, categoria, quantidade FROM livros WHERE categoria = ? ORDER BY titulo ASC";
             $stmt = $conn->prepare($sql);
             $stmt->bind_param("s", $categoriaSelecionada);
             $stmt->execute();
             $result = $stmt->get_result();
         } else {
-            $sql = "SELECT titulo, autor, categoria FROM livros ORDER BY titulo ASC";
+            $sql = "SELECT titulo, autor, ano, categoria, quantidade FROM livros ORDER BY titulo ASC";
             $result = $conn->query($sql);
         }
 
-        if ($result->num_rows > 0) {
+        if ($result && $result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
                 echo "<div class='livro-card'>";
                 echo "<h3>" . htmlspecialchars($row['titulo']) . "</h3>";
                 echo "<p><span>Autor:</span> " . htmlspecialchars($row['autor']) . "</p>";
+                echo "<p><span>Ano:</span> " . htmlspecialchars($row['ano']) . "</p>";
                 echo "<p><span>Categoria:</span> " . htmlspecialchars($row['categoria']) . "</p>";
+                echo "<p><span>Quantidade disponível:</span> " . htmlspecialchars($row['quantidade']) . "</p>";
                 echo "</div>";
             }
         } else {
